@@ -1,0 +1,48 @@
+#accordion{
+    width: 750px;
+    margin: 0 auto; 
+}
+#accordion h3{
+    background: #D9D9D9;
+    line-height: calc(var(--base-unit)*2);
+    padding: 0 20px;
+    position: relative;
+}
+#accordion h3 ~ h3{
+    margin-top: 1px;
+}
+
+#accordion span{
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%) rotate(180deg);
+    font-size: 12px;
+    opacity: 0.4;
+    transition:0.3s ;
+}
+
+#accordion .ui-state-active{
+    font-weight: bold;
+}
+#accordion .ui-state-active span{
+    transform: translateY(-50%) rotate(0deg);
+    opacity: 1;
+}
+#accordion div{
+    padding: 20px 20px 30px;
+}
+.portfolio_list li{
+    text-align: center;
+}
+.portfolio_list li p{
+    margin: var(--base-unit) 0;
+}
+
+.slick-slide img{
+    display: inline-block;
+}
+
+
+
+

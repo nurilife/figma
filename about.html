@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Page - ACME</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,1,0" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@40,400,1,0" />
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" href="css/common.css"> 
+    <link rel="stylesheet" href="css/about.css">
+    <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script>
+      $(document).ready(function(){
+        $("#accordion") .accordion({
+          heightStyle: "content"
+        });
+        $('.portfolio_list').slick({
+          arrows : false
+        });
+        $('.next-btn').click(function(){
+          $('.portfolio_list').slick('slickNext');
+        });
+        $('.prev-btn').click(function(){
+          $('.portfolio_list').slick('slickNext');
+        });
+      });
+    </script>
+  </head>
+<body>
+    <header>
+      <div class = "container">
+        <h1><a href="index.html"><span>Acme</span></a></h1>
+        <nav>
+          <ul>
+            <li>
+              <a href="index.html">home</a> / <a href="about.html">about</a>
+            </li>
+            <li><a href="signin.html" class="light-bg light-txt btn"><span class="material-symbols-outlined">lock</span>
+              <span>Sign in</span>
+              </a>
+            </li>
+            <li><a href="signup.html" class="highlight-bg highlight-txt btn">sign up for free</a>
+            </li>
+          </ul> 
+        </nav>
+      </div>  
+    </header>
+    <section class = "banner con_pd">
+      <h2 class="banner_tt">about</h2>    
+    </section>
+    <section class = "qna contanier con_pd">
+        <h2 class="content_tt">Q&A</h2>
+        <p class="content_desc">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia</p>
+      
+    </section>
+    <hr><!-- horizontal rule-->   
+    <section class = "portfolio slidewrapper container con_pd">
+        <h2 class="content_tt">Example portfolios</h2>
+        <p class="content_desc">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia</p>
+        <div id="accordion">
+            <h3>Is this a free platform?<span class="material-symbols-rounded">change_history</span></h3>
+            <div>
+              <p>
+              Mauris mauris ante, blandit et, ultrices a, suscipit eget, quam. Integer
+              ut neque. Vivamus nisi metus, molestie vel, gravida in, condimentum sit
+              amet, nunc. Nam a nibh. Donec suscipit eros. Nam mi. Proin viverra leo ut
+              odio. Curabitur malesuada. Vestibulum a velit eu ante scelerisque vulputate.
+              </p>
+            </div>
+            <h3>Is this a free platform?<span class="material-symbols-rounded">change_history</span></h3>
+            <div>
+              <p>
+              Sed non urna. Donec et ante. Phasellus eu ligula. Vestibulum sit amet
+              purus. Vivamus hendrerit, dolor at aliquet laoreet, mauris turpis porttitor
+              velit, faucibus interdum tellus libero ac justo. Vivamus non quam. In
+              suscipit faucibus urna.
+              </p>
+            </div>
+            <h3>Is this a free platform?<span class="material-symbols-rounded">change_history</span></h3>
+            <div>
+              <p>
+              Nam enim risus, molestie et, porta ac, aliquam ac, risus. Quisque lobortis.
+              Phasellus pellentesque purus in massa. Aenean in pede. Phasellus ac libero
+              ac tellus pellentesque semper. Sed ac felis. Sed commodo, magna quis
+              lacinia ornare, quam ante aliquam nisi, eu iaculis leo purus venenatis dui.
+              </p>
+            </div>
+            <h3>Is this a free platform?<span class="material-symbols-rounded">change_history</span></h3>
+            <div>
+              <p>
+              Cras dictum. Pellentesque habitant morbi tristique senectus et netus
+              et malesuada fames ac turpis egestas. Vestibulum ante ipsum primis in
+              faucibus orci luctus et ultrices posuere cubilia Curae; Aenean lacinia
+              mauris vel est.
+              </p>
+              <p>
+              Suspendisse eu nisl. Nullam ut libero. Integer dignissim consequat lectus.
+              Class aptent taciti sociosqu ad litora torquent per conubia nostra, per
+              inceptos himenaeos.
+              </p>
+            </div>
+          </div>
+           
+      <ul class="portfolio_list">
+        <li>
+            <img src="images\protfolio_ex1.jpg" alt="protfolio_ex1">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <a href="" class ="link highlight-txt">go to protfolio &rarr;></a>
+        </li>
+        <li>
+            <img src="images\protfolio_ex1.jpg" alt="protfolio_ex1">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <a href="" class ="link highlight-txt">go to protfolio &rarr;></a>
+        </li>
+        <li>
+            <img src="images\protfolio_ex1.jpg" alt="protfolio_ex1">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <a href="" class ="link highlight-txt">go to protfolio &rarr;></a>
+        </li>    
+      </ul>  
+      <span class="material-symbols-outlined prev-btn">chevron_left</span>
+      <span class="material-symbols-outlined next-btn">chevron_right</span>
+    </section>
+    <footer>
+      <div class="cta con_pd">
+        <h2 class="content_tt">Create your free account</h2>
+        <p class="content_desc">No hidden fees, no credit card required.</p>
+        <a href="" class="highlight-bg highlight-txt big btn">sign up for free</a>
+        <a href=""></a>
+      </div>
+      <div class="copyright con_pd">
+        <p>(c)2022 All right reserved.</p>
+        <p>Questions? Email us at <a href="" class ="link highlight-txt">office@product.com</a></p>
+      </div>
+    </footer>
+</body>
+</html>

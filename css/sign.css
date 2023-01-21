@@ -1,0 +1,66 @@
+body > header > div {
+    justify-content: center;
+}
+.banner h2{
+    margin-bottom: calc(var(--base-unit)*3);
+}
+form{
+    width: 350px;
+    margin: 0 auto calc(var(--base-unit)*3);
+}
+form p{
+    background: #FFF;
+    line-height:calc(var(--base-unit*2));
+    border-radius: 3px;
+    display: flex;
+    padding: 0 20px;
+    align-items: center;
+}
+
+form label{
+    line-height: 54px;
+}
+form label .material-symbols-outlined{
+    line-height: 54px;
+    vertical-align: bottom;
+    color: var( --light-text-c);
+}
+
+form p:focus-within{
+    box-shadow: inset 0px 0px 4px 4px rgba(255, 0, 0, 0.3);
+}
+form p input{
+    flex:1 1 0; /*flex-grow 1, flex-shirink 1, flex-basis 0; */
+    line-height: 54px;
+    border: none;
+    outline: none;
+    background: none;
+    font-style: italic;
+}
+form p input::placeholder {
+    color: var( --light-text-c);
+}
+form p:last-child{
+    background: none;
+    border: 1px solid #FFF;
+   
+}
+form p:last-child input{
+    color: #FFF;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 18px;
+    font-style: normal;
+} 
+
+form p+ p {
+    margin-top: 10px;
+}
+
+form input:not([type="submit"]){
+    padding-left: 10px;
+}
+
+footer .cta h2{
+    color: var(--text-c);
+}
